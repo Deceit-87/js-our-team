@@ -34,29 +34,30 @@ const team = [
 
   console.log(team[0].name,team[0].role,team[0].image)
   console.log(team.length)
-
+  const CONTAINER = document.querySelector('.team-container')
+  
   for (let i = 0; i < team.length; i++) {
 
       console.log(team[i].name,team[i].role)
-
+      CONTAINER.innerHTML += `'  <div class="team-card">
+      <div class="card-image">
+        <img
+          src="./img/${team[i].image}"
+          alt="Wayne Barnett"
+        >
+      </div>
+      <div class="card-text">
+        <h3>${team[i].name}</h3>
+        <p>${team[i].role}</p>
+      </div>
+    </div>'`
       
   }
 
-  const CONTAINER = document.querySelector('.team-container')
+  
   console.log(CONTAINER)
 
-  CONTAINER.innerHTML += `'  <div class="team-card">
-  <div class="card-image">
-    <img
-      src="img/wayne-barnett-founder-ceo.jpg"
-      alt="Wayne Barnett"
-    >
-  </div>
-  <div class="card-text">
-    <h3>Wayne Barnett</h3>
-    <p>Founder & CEO</p>
-  </div>
-</div>'`
+  
 
 
 

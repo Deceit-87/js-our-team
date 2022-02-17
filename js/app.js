@@ -30,3 +30,54 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
   ];
+
+
+  console.log(team[0].name,team[0].role,team[0].image)
+  console.log(team.length)
+
+  for (let i = 0; i < team.length; i++) {
+
+      console.log(team[i].name,team[i].role)
+
+      
+  }
+
+  const CONTAINER = document.querySelector('.team-container')
+  console.log(CONTAINER)
+
+  CONTAINER.innerHTML += `'  <div class="team-card">
+  <div class="card-image">
+    <img
+      src="img/wayne-barnett-founder-ceo.jpg"
+      alt="Wayne Barnett"
+    >
+  </div>
+  <div class="card-text">
+    <h3>Wayne Barnett</h3>
+    <p>Founder & CEO</p>
+  </div>
+</div>'`
+
+
+
+
+
+
+
+
+
+
+
+
+//   <div class="team-card">
+//   <div class="card-image">
+//     <img
+//       src="img/wayne-barnett-founder-ceo.jpg"
+//       alt="Wayne Barnett"
+//     >
+//   </div>
+//   <div class="card-text">
+//     <h3>Wayne Barnett</h3>
+//     <p>Founder & CEO</p>
+//   </div>
+// </div>

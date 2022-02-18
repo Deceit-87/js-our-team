@@ -94,32 +94,8 @@ const userImg = document.getElementById('image').value
 
   
 
-  function aggiungiMembro(AddMember){
-   
-    // team.push(AddMember)
-    
-     const memberCard = `
-    <div class="team-card">
-      <div class="card-image">
-        <img
-          src="img/${userImg}"
-          alt="${userName}"
-        />
-      </div>
-      <div class="card-text">
-        <h3>${userName}</h3>
-        <p>${userRole}</p>
-      </div>
-  </div>
-  `
- CONTAINER.innerHTML += memberCard
-}
+ 
 
-
-
-Add.addEventListener('click',aggiungiMembro())
-
-// console.log(Add.addEventListener('click',))
 
 
 
